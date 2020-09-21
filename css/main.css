@@ -1,0 +1,266 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  line-height: normal;
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Microsoft JhengHei;
+  background: #000f36;
+  min-width: 1100px;
+  height: 100%;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  min-width: 1000px;
+  height: 980px;
+  overflow: hidden;
+}
+main article {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+main article .inbg {
+  position: absolute;
+  width: 1000px;
+  height: 275px;
+  background: linear-gradient(205deg, #fffcc4 0%, #ebcf78 53%, #c29222 68%, #a17a1c 100%);
+  margin: 253px 0 0 0;
+}
+main article .logo {
+  position: absolute;
+  width: 851px;
+  height: 650px;
+  left: -105px;
+  background: url(../images/logo.png) no-repeat top center;
+  background-size: 100%;
+  animation: bounceInDown;
+  animation-duration: 1s;
+}
+main article .text {
+  position: absolute;
+  width: 357px;
+  height: 206px;
+  left: 555px;
+  top: 36px;
+  background: url(../images/text.png) no-repeat top center;
+  background-size: 100%;
+}
+main article .login {
+  position: absolute;
+  width: 285px;
+  height: 204px;
+  left: 586px;
+  top: 288px;
+}
+main article .login .t {
+  width: 285px;
+  height: 45px;
+}
+main article .login .t .n,
+main article .login .t .o {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  width: 136px;
+  height: 43px;
+  line-height: 43px;
+  border-radius: 3px;
+  border: 1px solid #1b5c08;
+  font-size: 22px;
+  box-shadow: 1px 1px 5px 0px #70bf28 inset;
+  color: #fff;
+  background: linear-gradient(to bottom, #7fd12e 0%, #064500 100%);
+  cursor: pointer;
+}
+main article .login .t .n::before,
+main article .login .t .o::before {
+  content: " ";
+  position: absolute;
+  width: 170px;
+  height: 43px;
+  left: -19px;
+  top: -17px;
+  border-radius: 48%;
+  background: #fff;
+  opacity: 0.15;
+}
+main article .login .t .n::before:nth-of-type(2),
+main article .login .t .o::before:nth-of-type(2) {
+  left: -14px;
+}
+main article .login .t .n:hover, main article .login .t .n:active, main article .login .t .n.active,
+main article .login .t .o:hover,
+main article .login .t .o:active,
+main article .login .t .o.active {
+  border: 1px solid #4d3500;
+  background: linear-gradient(to top, #bd5900 0%, #401e00 100%);
+  box-shadow: none;
+}
+main article .login .t .n:hover::before, main article .login .t .n:active::before, main article .login .t .n.active::before,
+main article .login .t .o:hover::before,
+main article .login .t .o:active::before,
+main article .login .t .o.active::before {
+  opacity: 0;
+}
+main article .login .t .n {
+  margin: 0 9px 0 0;
+}
+main article .login .m {
+  width: 285px;
+  height: 90px;
+}
+main article .login .m .t,
+main article .login .m .b {
+  *zoom: 1;
+  width: 285px;
+  height: 36px;
+  margin: 9px 0 0 0;
+}
+main article .login .m .t:after, main article .login .m .t:before,
+main article .login .m .b:after,
+main article .login .m .b:before {
+  content: "";
+  display: table;
+}
+main article .login .m .t:after,
+main article .login .m .b:after {
+  clear: both;
+}
+main article .login .m .t p,
+main article .login .m .b p {
+  float: left;
+  width: 44px;
+  height: 36px;
+  font-size: 22px;
+  line-height: 36px;
+  margin: 0 9px 0 0;
+  color: #4b2f15;
+}
+main article .login .m .t input,
+main article .login .m .b input {
+  float: left;
+  width: 212px;
+  height: 26px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  outline: none;
+}
+main article .login .b {
+  width: 285px;
+  height: 60px;
+}
+main article .login .b .in {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  width: 283px;
+  height: 58px;
+  line-height: 58px;
+  border-radius: 3px;
+  border: 1px solid #2127ae;
+  font-size: 22px;
+  box-shadow: 1px 1px 5px 0px #6a75ff inset;
+  color: #fff;
+  background: linear-gradient(to bottom, #263af5 0%, #080738 100%);
+  cursor: pointer;
+}
+main article .login .b .in::before {
+  content: " ";
+  position: absolute;
+  width: 342px;
+  height: 50px;
+  left: -28px;
+  top: -19px;
+  border-radius: 48%;
+  background: #fff;
+  opacity: 0.15;
+}
+main article .login .b .in:hover, main article .login .b .in:active, main article .login .b .in.active {
+  border: 1px solid #4047c7;
+  box-shadow: 1px 1px 5px 0px #858dfc inset;
+  background: linear-gradient(to bottom, #4255fc 0%, #19179b 100%);
+}
+main .bg {
+  position: absolute;
+  background: url(../images/bg.jpg) no-repeat top center;
+  background-size: 1920px;
+  width: 100%;
+  height: 100%;
+  z-index: -20;
+}
+
+.iebg {
+  display: none;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .iebg {
+    display: block;
+    position: absolute;
+    background: url(../images/bg.jpg) no-repeat top center;
+    background-size: 1920px;
+    width: 100%;
+    height: 100%;
+    z-index: -20;
+  }
+}

@@ -1,0 +1,201 @@
+@import "_reset_css";
+
+@mixin clearfix {
+    &:after,
+    &:before {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    *zoom: 1;
+}
+
+html {
+    font-family: Microsoft JhengHei;
+    background: #000f36;
+    min-width: 1100px;
+    height: 100%;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+    min-width: 1000px;
+    height: 980px;
+    overflow: hidden;
+    article {
+        position: relative;
+        width: 1000px;
+        margin: 0 auto;
+        .inbg {
+            position: absolute;
+            width: 1000px;
+            height: 275px;
+            background: linear-gradient(205deg, #fffcc4 0%, #ebcf78 53%, #c29222 68%, #a17a1c 100%);
+            margin: 253px 0 0 0;
+        }
+        .logo {
+            position: absolute;
+            width: 851px;
+            height: 650px;
+            left: -105px;
+            background: url(../images/logo.png) no-repeat top center;
+            background-size: 100%;
+            animation: bounceInDown;
+            animation-duration: 1s;
+        }
+        .text {
+            position: absolute;
+            width: 357px;
+            height: 206px;
+            left: 555px;
+            top: 36px;
+            background: url(../images/text.png) no-repeat top center;
+            background-size: 100%;
+        }
+        .login {
+            position: absolute;
+            width: 285px;
+            height: 204px;
+            left: 586px;
+            top: 288px;
+            .t {
+                width: 285px;
+                height: 45px;
+                .n,
+                .o {
+                    position: relative;
+                    overflow: hidden;
+                    float: left;
+                    text-align: center;
+                    width: 136px;
+                    height: 43px;
+                    line-height: 43px;
+                    border-radius: 3px;
+                    border: 1px solid #1b5c08;
+                    font-size: 22px;
+                    box-shadow: 1px 1px 5px 0px #70bf28 inset;
+                    color: #fff;
+                    background: linear-gradient(to bottom, #7fd12e 0%, #064500 100%);
+                    cursor: pointer;
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        width: 170px;
+                        height: 43px;
+                        left: -19px;
+                        top: -17px;
+                        border-radius: 48%;
+                        background: #fff;
+                        opacity: 0.15;
+                        &:nth-of-type(2) {
+                            left: -14px;
+                        }
+                    }
+                    &:hover,
+                    &:active,
+                    &.active {
+                        border: 1px solid #4d3500;
+                        background: linear-gradient(to top, #bd5900 0%, #401e00 100%);
+                        box-shadow: none;
+                        &::before {
+                            opacity: 0;
+                        }
+                    }
+                }
+                .n {
+                    margin: 0 9px 0 0;
+                }
+            }
+            .m {
+                width: 285px;
+                height: 90px;
+                .t,
+                .b {
+                    @include clearfix;
+                    width: 285px;
+                    height: 36px;
+                    margin: 9px 0 0 0;
+                    p {
+                        float: left;
+                        width: 44px;
+                        height: 36px;
+                        font-size: 22px;
+                        line-height: 36px;
+                        margin: 0 9px 0 0;
+                        color: #4b2f15;
+                    }
+                    input {
+                        float: left;
+                        width: 212px;
+                        height: 26px;
+                        padding: 5px 10px;
+                        border-radius: 3px;
+                        outline: none;
+                    }
+                }
+            }
+            .b {
+                width: 285px;
+                height: 60px;
+                .in {
+                    position: relative;
+                    overflow: hidden;
+                    float: left;
+                    text-align: center;
+                    width: 283px;
+                    height: 58px;
+                    line-height: 58px;
+                    border-radius: 3px;
+                    border: 1px solid #2127ae;
+                    font-size: 22px;
+                    box-shadow: 1px 1px 5px 0px #6a75ff inset;
+                    color: #fff;
+                    background: linear-gradient(to bottom, #263af5 0%, #080738 100%);
+                    cursor: pointer;
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        width: 342px;
+                        height: 50px;
+                        left: -28px;
+                        top: -19px;
+                        border-radius: 48%;
+                        background: #fff;
+                        opacity: 0.15;
+                    }
+                    &:hover,
+                    &:active,
+                    &.active {
+                        border: 1px solid #4047c7;
+                        box-shadow: 1px 1px 5px 0px #858dfc inset;
+                        background: linear-gradient(to bottom, #4255fc 0%, #19179b 100%);
+                    }
+                }
+            }
+        }
+    }
+    .bg {
+        position: absolute;
+        background: url(../images/bg.jpg) no-repeat top center;
+        background-size: 1920px;
+        width: 100%;
+        height: 100%;
+        z-index: -20;
+    }
+}
+
+.iebg {
+    display: none;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        display: block;
+        position: absolute;
+        background: url(../images/bg.jpg) no-repeat top center;
+        background-size: 1920px;
+        width: 100%;
+        height: 100%;
+        z-index: -20;
+    }
+}
