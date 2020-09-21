@@ -88,7 +88,6 @@ main article .logo {
   background-size: 100%;
   animation: tada;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
 }
 main article .text {
   position: absolute;
