@@ -62,14 +62,14 @@ input {
 html {
   font-family: Microsoft JhengHei;
   background: #000f36;
-  min-width: 1000px;
+  min-width: 1200px;
   height: 100%;
   overflow: hidden;
 }
 
 main {
   position: relative;
-  min-width: 1000px;
+  min-width: 1100px;
   height: 980px;
   overflow: hidden;
 }
@@ -122,6 +122,9 @@ main article .login .t .o {
   font-size: 22px;
   box-shadow: 1px 1px 5px 0px #e5af55 inset;
   color: #fff;
+  background-color: #75310a;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d99f48, endColorstr=#75310a);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#d99f48, endColorstr=#75310a)";
   background: linear-gradient(to top, #75310a 0%, #d99f48 19%, #75310a 29%, #d99f48 58%, #fed78c 68%, #fff7eb 76%, #fed78c 88%, #75310a 100%);
   cursor: pointer;
 }
@@ -130,6 +133,9 @@ main article .login .t .o:hover,
 main article .login .t .o:active,
 main article .login .t .o.active {
   border: 1px solid #001d54;
+  background-color: #001d53;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#001d53, endColorstr=#1360c4);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#001d53, endColorstr=#1360c4)";
   background: linear-gradient(to top, #1360c4 0%, #001d53 62%);
   box-shadow: 1px 1px 5px 0px #001d53 inset;
 }
@@ -171,6 +177,9 @@ main article .login .m .l input:after, main article .login .m .l input:before {
 main article .login .m .l input:after {
   clear: both;
 }
+main article .login .m .l input::placeholder {
+  color: #fff;
+}
 main article .login .m .l input:nth-of-type(1) {
   margin: 0 0 10px 0;
 }
@@ -186,12 +195,18 @@ main article .login .m .r {
   font-size: 22px;
   box-shadow: 1px 1px 5px 0px #02aa15 inset;
   color: #fff;
+  background-color: #00660c;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#0ac31f, endColorstr=#00470c);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0ac31f, endColorstr=#00470c)";
   background: linear-gradient(to top, #005a06 3%, #0eb822 14%, #00470c 27%, #00660c 40%, #0ac31f 67%, #c9ffc6 77%, #0eb822 86%, #005a06 100%);
   cursor: pointer;
 }
 main article .login .m .r:hover, main article .login .m .r:active, main article .login .m .r.active {
   border: 1px solid #004869;
   box-shadow: 1px 1px 5px 0px #0267aa inset;
+  background-color: #002147;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#0a60c3, endColorstr=#002147);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0a60c3, endColorstr=#002147)";
   background: linear-gradient(to top, #00365a 3%, #0e66b8 14%, #002147 27%, #003d66 40%, #0a60c3 67%, #c6e3ff 77%, #0e66b8 86%, #00325a 100%);
 }
 main .bg {
@@ -202,18 +217,15 @@ main .bg {
   height: 100%;
   z-index: -20;
 }
-
-.iebg {
-  display: none;
-}
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .iebg {
-    display: block;
-    position: absolute;
-    background: url(../images/bg.jpg) no-repeat top center;
-    background-size: 1920px;
-    width: 100%;
-    height: 100%;
-    z-index: -20;
+  main .bg {
+    width: 1920px;
+    height: 1000px;
+  }
+}
+@media screen and (min-width: 0) and (-webkit-min-device-pixel-ratio: 0.75), screen and (min-width: 0) and (min-resolution: 72dpi) {
+  main .bg {
+    width: 1920px;
+    height: 1000px;
   }
 }

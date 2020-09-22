@@ -15,14 +15,14 @@
 html {
     font-family: Microsoft JhengHei;
     background: #000f36;
-    min-width: 1000px;
+    min-width: 1200px;
     height: 100%;
     overflow: hidden;
 }
 
 main {
     position: relative;
-    min-width: 1000px;
+    min-width: 1100px;
     height: 980px;
     overflow: hidden;
     article {
@@ -71,6 +71,9 @@ main {
                     font-size: 22px;
                     box-shadow: 1px 1px 5px 0px #e5af55 inset;
                     color: #fff;
+                    background-color: #75310a;
+                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d99f48, endColorstr=#75310a);
+                    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#d99f48, endColorstr=#75310a)";
                     background: linear-gradient(
                         to top,
                         #75310a 0%,
@@ -87,6 +90,9 @@ main {
                     &:active,
                     &.active {
                         border: 1px solid #001d54;
+                        background-color: #001d53;
+                        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#001d53, endColorstr=#1360c4);
+                        -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#001d53, endColorstr=#1360c4)";
                         background: linear-gradient(to top, #1360c4 0%, #001d53 62%);
                         box-shadow: 1px 1px 5px 0px #001d53 inset;
                     }
@@ -113,6 +119,9 @@ main {
                         background-color: #1b1b17;
                         border-radius: 3px;
                         padding: 0 10px;
+                        &::placeholder {
+                            color: #fff;
+                        }
                         &:nth-of-type(1) {
                             margin: 0 0 10px 0;
                         }
@@ -130,6 +139,9 @@ main {
                     font-size: 22px;
                     box-shadow: 1px 1px 5px 0px #02aa15 inset;
                     color: #fff;
+                    background-color: #00660c;
+                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#0ac31f, endColorstr=#00470c);
+                    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0ac31f, endColorstr=#00470c)";
                     background: linear-gradient(
                         to top,
                         #005a06 3%,
@@ -147,6 +159,9 @@ main {
                     &.active {
                         border: 1px solid #004869;
                         box-shadow: 1px 1px 5px 0px #0267aa inset;
+                        background-color: #002147;
+                        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#0a60c3, endColorstr=#002147);
+                        -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0a60c3, endColorstr=#002147)";
                         background: linear-gradient(
                             to top,
                             #00365a 3%,
@@ -170,18 +185,13 @@ main {
         width: 100%;
         height: 100%;
         z-index: -20;
-    }
-}
-
-.iebg {
-    display: none;
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        display: block;
-        position: absolute;
-        background: url(../images/bg.jpg) no-repeat top center;
-        background-size: 1920px;
-        width: 100%;
-        height: 100%;
-        z-index: -20;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            width: 1920px;
+            height: 1000px;
+        }
+        @media screen and (min-width: 0) and (min-resolution: +72dpi) {
+            width: 1920px;
+            height: 1000px;
+        }
     }
 }
