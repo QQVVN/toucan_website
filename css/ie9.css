@@ -1,0 +1,10 @@
+.iebg {
+  display: block;
+  position: absolute;
+  background: url(../images/bg.jpg);
+  width: 1920px;
+  height: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -20;
+}
